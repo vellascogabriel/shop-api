@@ -7,9 +7,27 @@ namespace Shop.Controllers
     public class CategoryController : ControllerBase
     {
         [HttpGet]
-        public string MeuMetodo()
+        public string Get()
         {
-            return "Olá Mundo!";
+            return "GET";
+        }
+
+        [HttpPost]
+        public string Post()
+        {
+            return "POST";
+        }
+
+        [HttpPut]
+        public string Put()
+        {
+            return "Put";
+        }
+
+        [HttpDelete]
+        public string Delete()
+        {
+            return "DELETE";
         }
     }
 }
